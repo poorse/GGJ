@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textSize="@dimen/x13"
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x2"
+        android:layout_marginRight="@dimen/x15"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x120"
+        android:text="YOUKELAI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textSize="@dimen/x13"
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_company_name"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x2"
+        android:text="油客来自助服务终端"
+        android:textColor="@color/white" />
+
+    <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+        android:clickable="true"
+        android:id="@+id/btn_jyjf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_below="@id/tv_appname"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginRight="@dimen/x15" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_below="@id/btn_jyjf"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x1"
+        android:layout_marginRight="@dimen/x15"
+        android:orientation="horizontal">
+
+        <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+            android:clickable="true"
+            android:id="@+id/btn_shop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_below="@id/btn_jyjf"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1" />
+
+        <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/btn_face"
+            android:id="@+id/btn_face"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x90"
+            android:layout_below="@id/btn_jyjf"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_below="@id/ll_menu"
+        android:layout_marginTop="@dimen/x1"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x15"
+        android:orientation="horizontal">
+
+        <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+            android:layout_marginLeft="@dimen/x10"
+            android:clickable="true"
+            android:id="@+id/btn_integral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_jyjf"
+            android:layout_weight="1" />
+
+        <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+            android:layout_marginLeft="@dimen/x10"
+            android:clickable="true"
+            android:id="@+id/btn_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_jyjf"
+            android:layout_weight="1" />
+
+        <com.ruoyu.pigroad.myapplication.Widget.ThumbnailView
+            android:layout_marginLeft="@dimen/x10"
+            android:clickable="true"
+            android:id="@+id/btn_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_jyjf"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:background="@drawable/icon_setting"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20" />
+
+</RelativeLayout>

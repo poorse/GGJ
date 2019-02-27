@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#588E5C"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/waitpay_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/waitpay_bg2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:background="@drawable/icon_choose_yes" />
+
+            <TextView
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="向商家付款"
+                android:textColor="#588E5C" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/icon_notice" />
+
+        <TextView
+            android:textSize="@dimen/x13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x15"
+            android:text="请将付款码放置左下方扫码处完成付款操作" />
+
+        <TextView
+            android:textSize="@dimen/x13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x5"
+            android:text="付款码数字仅用于支付时向扫码处展示" />
+
+        <ImageView
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x70"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/icon_scan_tip" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/x20"
+            android:background="#6ccacaca"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/icon_qr"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+
+            <TextView
+                android:textSize="@dimen/x13"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="优先使用付款码付款"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:textSize="@dimen/x13"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/waitpay_button_bg"
+        android:text="完成付款"
+         />
+
+    <Button
+        android:id="@+id/btn_input"
+        android:textSize="@dimen/x13"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/waitpay_button_bg"
+        android:text="识别不了怎么办？试试手动输入"
+        />
+
+
+
+
+</LinearLayout>

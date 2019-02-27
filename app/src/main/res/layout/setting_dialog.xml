@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginRight="@dimen/x20"
+    android:layout_marginLeft="@dimen/x20"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="@dimen/x20"
+        android:id="@+id/tv_tip"
+        android:textSize="@dimen/x17"
+        android:layout_marginTop="@dimen/x10"
+        android:textColor="@color/black"
+        android:text="请输入管理员密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="@dimen/x17"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:id="@+id/et_password"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:background="@null"
+        android:layout_below="@id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_below="@id/et_password"
+        android:background="@drawable/button_select_bg"
+        android:text="取消"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x35" />
+
+    <Button
+        android:textColor="@color/white"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/btn_cancel"
+        android:id="@+id/btn_confirm"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_below="@id/et_password"
+        android:background="@drawable/button_cancel_bg"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x35" />
+
+</RelativeLayout>

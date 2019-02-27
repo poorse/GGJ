@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e7e7e7"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title_include"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_choose_oil"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/linearlayout_select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/icon_oilstaion"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:textSize="@dimen/x14"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="选择油站"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/x14"
+            android:layout_marginRight="@dimen/x10"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@+id/tv_oilid"
+            android:text="1号油站"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/x20"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_right_arrow"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Button正常状态下的背景 -->
+    <item  android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- 矩形的圆角弧度 -->
+            <!--<corners android:radius="30dp" />-->
+            <!-- 矩形的填充色 -->
+            <solid android:color="#FAFAFA" />
+            <corners android:radius="10dp" />
+            <!-- 矩形的边框的宽度,每段虚线的长度，和两段虚线之间的颜色和颜色 -->
+        </shape>
+    </item>
+
+    <!-- Button按下时的背景 -->
+    <item  android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- 矩形的圆角弧度 -->
+            <corners android:radius="10dp" />
+            <!--<corners android:radius="30dp" />-->
+            <!-- 矩形的填充色 -->
+            <solid android:color="#68bfbfbf" />
+            <!-- 矩形的边框的宽度,每段虚线的长度，和两段虚线之间的颜色和颜色 -->
+        </shape>
+    </item>
+</selector>

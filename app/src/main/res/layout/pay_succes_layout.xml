@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#588E5C"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/waitpay_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/waitpay_bg2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginBottom="@dimen/x15"
+                android:background="@drawable/icon_choose_yes" />
+
+            <TextView
+                android:textSize="@dimen/x13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="支付结果"
+                android:textColor="#588E5C" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/icon_success" />
+
+        <TextView
+            android:layout_marginTop="@dimen/x15"
+            android:textStyle="bold"
+            android:textSize="@dimen/x16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="付款成功！" />
+        <TextView
+            android:layout_marginTop="@dimen/x15"
+            android:textSize="@dimen/x13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="付款成功！请拿好您的支付小票" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x70"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/icon_ticket" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/x20"
+            android:background="#6ccacaca"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/icon_thanks"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20" />
+
+            <TextView
+                android:textSize="@dimen/x13"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="欢迎再次使用油客来自助服务终端"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_close"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="@dimen/x13"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/waitpay_button_bg"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_downtime"
+            android:textSize="@dimen/x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+             />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:textSize="@dimen/x13"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/waitpay_button_bg"
+        android:text="继续操作"
+        />
+
+</LinearLayout>

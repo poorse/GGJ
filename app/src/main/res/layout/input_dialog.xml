@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="@dimen/x13"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:textColor="@color/black"
+        android:text="请输入18位付款码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:background="@drawable/icon_scan_tip"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_marginLeft="@dimen/x5"
+            android:textSize="@dimen/x19"
+            android:textColor="@color/black"
+            android:maxLength="18"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_next"
+        android:textSize="@dimen/x13"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:textColor="@color/white"
+        android:text="下一步"
+        android:layout_marginRight="@dimen/x15"
+        android:layout_marginLeft="@dimen/x15"
+        android:background="@drawable/btn_wx_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+
+</LinearLayout>
